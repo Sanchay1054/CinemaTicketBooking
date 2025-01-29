@@ -4,7 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {useState, useRef, useEffect} from 'react';
 import HomeTab from "../Routing/HomeTab";
 
-const Home = () => {
+const Home = ({ navigation }) => {
     const [search, setSearch] = useState('');
     const [index,setIndex] = useState(0);
     const data = [{url:'https://m.media-amazon.com/images/I/71h9DTSjRlL._AC_UF1000,1000_QL80_.jpg'},{url:'https://m.media-amazon.com/images/M/MV5BNWMwODYyMjQtMTczMi00NTQ1LWFkYjItMGJhMWRkY2E3NDAyXkEyXkFqcGc@._V1_.jpg'}]
@@ -31,7 +31,7 @@ const Home = () => {
 
 
     return(
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.body} showsHorizontalScrollIndicator={false}>
         <View style={styles.navbar}>
             {/* <Text style={styles.text}>Hello This is a Home page</Text> */}
             <Image style={styles.navbarimg} source={require('../../Components/logo.png')}/>
@@ -72,7 +72,7 @@ const Home = () => {
                 {renderContent()}
             </View>
 
-            <View><HomeTab/></View>
+            <HomeTab/>
 
             {/* <ScrollView horizontal>
             <View style={styles.show}>

@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import StackRouting from './Screen/Routing/StackRouting';
+import Routing from './Screen/Routing/Routing';
 
 export default function App() {
   return (
-    <StackRouting/>
+    <Routing/>
   );
 }
 

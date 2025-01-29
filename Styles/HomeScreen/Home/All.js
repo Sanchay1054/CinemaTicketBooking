@@ -12,7 +12,8 @@ export default StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     // alignItems: 'center',
-    justifyContent: 'flex-start'
+    justifyContent: 'space-evenly',
+    marginBottom: '20px',
   },
   detail:{
     display: 'flex',
@@ -20,9 +21,22 @@ export default StyleSheet.create({
     padding: '5px',
     alignItems: 'center',
     justifyContent: 'center',
-    margin: '5px',
+    margin: '1vw',
     boxShadow: '0px 0px 5px #555',
     width: 'fit-content',
     borderRadius: '10px',
-  }
+    maxWidth: '35vw',
+    backgroundColor: '#FFF',
+  },
+  head:{
+    fontFamily:'Sans-serif',
+    fontSize: '130%',
+    fontWeight: '600',
+    paddingLeft: '5vw',
+    padding: '10px',
+  },
+  title:{
+    fontWeight: '600',
+    // fontSize: '100%',
+  },
 });

@@ -5,6 +5,7 @@ import Home from '../HomeScreen/Home';
 import Profile from '../HomeScreen/Profile';
 import styles from '../../Styles/Routing/RoutingStyles'
 import { View } from 'react-native';
+import BookSeat from '../Booking/BookSeat';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +30,7 @@ const StackRouting = () => {
 
   
   return (
-    <NavigationContainer>
+    // took the navigationContainer
       <View style={styles.body}>
       <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -69,7 +70,7 @@ const StackRouting = () => {
         <Tab.Screen name="Contact Us" component={Profile} />
       </Tab.Navigator>
       </View>
-    </NavigationContainer>
+    
   );
 };
 

@@ -1,6 +1,6 @@
 import {View, Text} from 'react-native';
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
     return(
         <>
         <View>
